@@ -1,13 +1,15 @@
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Cascadia Mono', monospace;
     margin: 0;
     padding: 0;
+    background-color: #005e02; 
+    color: #99d9ea;
 }
 
 #image-section {
     text-align: center;
-    padding: 50px 0;
+    padding: 10px 0;
 }
 
 #image-section img {
@@ -15,7 +17,7 @@ body {
 }
 
 #resume-section {
-    padding: 50px;
+    padding: 60px;
 }
 
 .resume-item {
