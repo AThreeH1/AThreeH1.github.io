@@ -4,12 +4,20 @@ body {
     margin: 0;
     padding: 0;
     background-color: #005e02; 
-    color: #99d9ea;
+    color: #ffffff;
+}
+
+.container {
+    padding-left: 100px; 
+}
+
+h1, h2 {
+    color: #99d9ea; 
 }
 
 #image-section {
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 #image-section img {
