@@ -8,19 +8,28 @@ body {
 }
 
 .container {
-    padding-left: 100px; 
+    padding-left: 200px; 
 }
 
 h1, h2 {
     color: #99d9ea; 
 }
 
-#image-section {
+#image-section1 {
     text-align: center;
     padding: 20px 0;
 }
 
-#image-section img {
+#image-section1 img {
+    max-width: 70%;
+}
+
+#image-section2 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#image-section2 img {
     max-width: 100%;
 }
 
