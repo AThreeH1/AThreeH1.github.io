@@ -1,31 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhijeet Avhale - Resume</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Additional CSS for changing the link color */
-        a {
-            color: rgb(53, 202, 215); /* Change this to the color you want */
-            font-style: italic;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abhijeet Avhale — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Personal page of Abhijeet Avhale" />
+  <style>
+    :root{
+      --bg:#0b0f13; /* dark */
+      --card:#0f1720;
+      --muted:#9aa4b2;
+      --accent:#7c9cff;
+      --glass: rgba(255,255,255,0.03);
+      --radius:14px;
+      --maxw:1100px;
+      color-scheme: dark;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#07101a);color:#e6eef8}
+    a{color:inherit;text-decoration:none}
+
+    .wrap{max-width:var(--maxw);margin:48px auto;padding:28px;border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);box-shadow:0 6px 30px rgba(3,6,10,0.6);display:flex;gap:28px;align-items:center}
+
+    /* Left / Right layout */
+    .left{flex:1;min-width:260px}
+    .right{width:320px;display:flex;justify-content:center}
+
+    /* Top nav */
+    .topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand .logo{width:46px;height:46px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#6ec6ff);display:flex;align-items:center;justify-content:center;font-weight:800;color:#071229}
+    nav{display:flex;gap:10px}
+    .btn{padding:8px 12px;border-radius:10px;font-weight:600;background:transparent;border:1px solid rgba(255,255,255,0.06);backdrop-filter: blur(4px);cursor:pointer}
+    .btn:hover{transform:translateY(-2px)}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),#6ec6ff);color:#041432;border:0}
+
+    h1{font-size:40px;margin:6px 0 6px;letter-spacing:-0.6px}
+    .tagline{color:var(--muted);font-weight:600;margin-bottom:12px}
+    .desc{color:var(--muted);line-height:1.6}
+
+    /* contact and publications */
+    .meta{margin-top:22px;display:flex;gap:18px;flex-wrap:wrap}
+    .card{background:var(--glass);border-radius:12px;padding:14px;border:1px solid rgba(255,255,255,0.03);min-width:220px}
+    .card h3{margin:0 0 8px 0}
+    .pub-list{margin:8px 0 0 18px;color:var(--muted)}
+
+    /* Photo */
+    .photo{width:260px;height:340px;border-radius:16px;background-image:linear-gradient(180deg,rgba(255,255,255,0.02),transparent),url('assets/photo.jpg');background-size:cover;background-position:center;border:1px solid rgba(255,255,255,0.04);box-shadow:0 8px 30px rgba(2,6,10,0.6)}
+
+    /* footer contact list */
+    .contacts{display:flex;flex-direction:column;gap:8px}
+    .contact-row{display:flex;gap:10px;align-items:center}
+    .icon{width:18px;height:18px;display:inline-block;opacity:0.95}
+    .small{font-size:13px;color:var(--muted)}
+
+    /* responsive */
+    @media (max-width:900px){
+      .wrap{flex-direction:column;padding:20px}
+      .right{width:100%}
+      .photo{width:100%;height:220px}
+      h1{font-size:28px}
+    }
+
+    /* prefers light override — keep dark but allow user to switch easily */
+    @media (prefers-color-scheme:light){
+      :root{--bg:#f6f8fb;--card:#ffffff;color-scheme:light;--muted:#445469}
+      body{background:linear-gradient(180deg,var(--bg),#e7eefb)}
+      .wrap{box-shadow:0 6px 30px rgba(8,12,20,0.06)}
+    }
+
+    /* little utility */
+    .nav-links{display:flex;gap:8px}
+    .nav-links a{display:inline-flex;align-items:center;gap:8px}
+  </style>
 </head>
 <body>
-    <!-- Image Section -->
-    <section id="image-section1">
-        <img src="Image.png" alt="Your Image">
-    </section>
-    <!-- Image Section -->
-    <section id="image-section2">
-        <img src="NN.png" alt="Your Image">
-    </section>
-    <!-- Main Content -->
-    <div class="container">
-        <!-- Header Section -->
-        <header>
-            <h1>Resume - <a href="https://docs.google.com/document/d/1JC5npN47LvaY7x0eI6A0VIjFo0DccyLorecNiRO2a-c/edit?usp=sharing">Link</a></h1>
-            <p>ana.avhale@gmail.com | +91-9370245209</p>
-        </header>
+  <main style="padding:18px">
+    <div class="wrap" role="main">
+      <div class="left">
+        <div class="topbar">
+          <div class="brand">
+            <div class="logo">AA</div>
+            <div style="line-height:1">
+              <div style="font-weight:700">Abhijeet Avhale</div>
+              <div class="small" style="font-size:12px;color:var(--muted)">PhD Student</div>
+            </div>
+          </div>
+
+          <nav class="nav-links" aria-label="Main Navigation">
+            <a class="btn" href="#home">About</a>
+            <a class="btn" href="assets/Abhijeet_Avhale_CV.pdf" target="_blank" rel="noopener">CV</a>
+            <a class="btn" href="#contact">Contact</a>
+            <a class="btn" href="#publications">Publications</a>
+          </nav>
+        </div>
+
+        <section id="home">
+          <h1 style="font-weight:800">Abhijeet Avhale</h1>
+          <div class="tagline">PhD Student at XYZ</div>
+          <p class="desc">Lorem Ipsum</p>
+
+          <div class="meta">
+            <div class="card" style="flex:1">
+              <h3 id="publications">Publications</h3>
+              <ol class="pub-list">
+                <li>Publication1</li>
+                <li>Publication2</li>
+              </ol>
+            </div>
+
+            <div class="card" id="contact">
+              <h3>Contact</h3>
+              <div class="contacts">
+                <div class="contact-row"><svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 7.5C2 6.12 3.12 5 4.5 5H19.5C20.88 5 22 6.12 22 7.5V16.5C22 17.88 20.88 19 19.5 19H4.5C3.12 19 2 17.88 2 16.5V7.5Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg><a class="small" href="mailto:abhijeet@example.com">abhijeet@example.com</a></div>
+                <div class="contact-row"><svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.89h2.54V9.41c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.61.77-1.61 1.56v1.87h2.74l-.44 2.89h-2.3v6.99C18.34 21.12 22 16.99 22 12c0-5.52-4.48-10-10-10z" stroke="currentColor" stroke-width="0.6"/></svg><a class="small" href="https://github.com/">GitHub</a></div>
+                <div class="contact-row"><svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 11-8 0 6 6 0 018 0zM2 20c0-3.3 2.7-6 6-6h8c3.3 0 6 2.7 6 6" stroke="currentColor" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/></svg><a class="small" href="https://www.linkedin.com/">LinkedIn</a></div>
+                <div class="contact-row"><svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 8v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 3l-5 7-5-7" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/></svg><a class="small" href="https://scholar.google.com/">Google Scholar</a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <div class="right" aria-hidden="false">
+        <div class="photo" role="img" aria-label="Photo of Abhijeet Avhale"></div>
+      </div>
+    </div>
+
+    <div style="max-width:var(--maxw);margin:12px auto;color:var(--muted);font-size:13px;text-align:center">Built with ❤️ • Dark mode by default • To deploy: push this file and the assets folder to your GitHub repo and enable GitHub Pages.</div>
+  </main>
+</body>
+</html>
