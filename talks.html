@@ -8,11 +8,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
     :root{--bg:#0b0f13;--muted:#9aa4b2;--maxw:900px;color-scheme:dark;font-family:Inter,system-ui}
-    body{margin:0;background:linear-gradient(180deg,var(--bg),#07101a);color:#e6eef8}
-    nav{display:flex;justify-content:flex-end;gap:10px;padding:24px}
-    .btn{padding:8px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.08);background:transparent;color:#e6eef8;}
-    .btn:hover{transform:translateY(-2px);}
-    main{max-width:var(--maxw);margin:auto;padding:24px}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#07101a);color:#e6eef8;padding-top:70px}
+    nav{position:fixed;top:0;left:0;right:0;display:flex;justify-content:flex-end;gap:10px;padding:18px 24px;background:rgba(11,15,19,0.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08);z-index:1000}
+    .btn{padding:8px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.08);background:transparent;color:#e6eef8;transition:transform 0.2s}
+    .btn:hover{transform:translateY(-2px)}
+    main{max-width:var(--maxw);margin:40px auto;padding:24px}
     h1{margin-bottom:16px}
     ol{color:var(--muted);line-height:1.8}
   </style>
@@ -22,7 +22,6 @@
     <a class="btn" href="index.html">About</a>
     <a class="btn" href="https://drive.google.com/file/d/1R5zP2FIxzHjyEYG8vs5-Ye4qzIxVHwMk/view" target="_blank">CV</a>
     <a class="btn" href="talks.html">Talks / Lectures</a>
-    <a class="btn" href="contact.html">Contact</a>
   </nav>
   <main>
     <h1>Talks & Lectures</h1>
