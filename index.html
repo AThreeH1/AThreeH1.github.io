@@ -25,11 +25,11 @@
     .social-links img{width:40px;height:40px;display:block}
     .publications{max-width:var(--maxw);margin:80px auto 40px;padding:0 28px}
     .publications h2{font-size:32px;margin-bottom:40px;text-align:center}
-    .pub-item{display:flex;gap:24px;margin-bottom:40px;align-items:flex-start}
+    .pub-item{display:flex;gap:24px;margin-bottom:40px;padding:20px;align-items:flex-start;background:rgba(255,255,255,.02);border-radius:12px;border:1px solid rgba(255,255,255,.05)}
     .pub-img{width:120px;height:120px;border-radius:12px;border:1px solid rgba(255,255,255,.08);object-fit:cover;flex-shrink:0}
     .pub-content{flex:1}
     .pub-title{font-size:20px;font-weight:600;margin:0 0 12px 0;color:#e6eef8}
-    .pub-desc{color:var(--muted);margin:0 0 16px 0;line-height:1.6}
+    .pub-desc{color:var(--muted);margin:0 0 12px 0;line-height:1.6;text-align:justify}
     .pub-btn{display:inline-block;padding:6px 16px;border-radius:8px;border:1px solid rgba(255,255,255,.08);font-size:14px;transition:transform 0.2s,background 0.2s}
     .pub-btn:hover{transform:translateY(-2px);background:rgba(255,255,255,.05)}
     footer{text-align:center;color:var(--muted);padding:20px;margin-top:40px}
@@ -57,23 +57,22 @@
       </div>
       <div class="photo"></div>
     </div>
-    <div class="papers">
-      <h2>Publications</h2>
+    <div class="publications">
+      <h2>Papers</h2>
       <div class="pub-item">
         <img src="assets/pub1.png" alt="Publication 1" class="pub-img">
         <div class="pub-content">
-          <h3 class="pub-title">Surface Development (Master's Thesis)</h3>
-          <p class="pub-desc">A novel state-space model, an extension of path development on surfaces. Uses crossed modules as the algebraic framework to extract features from images. Aggregation is done using blelloch scans.</p>
+          <h3 class="pub-title">Publication Title 1</h3>
+          <p class="pub-desc">Brief description of the first publication. This should explain the main contribution and findings of the research paper in a concise manner.</p>
           <a href="#" class="pub-btn" target="_blank">PDF</a>
         </div>
       </div>
       <div class="pub-item">
         <img src="assets/pub2.png" alt="Publication 2" class="pub-img">
         <div class="pub-content">
-          <h3 class="pub-title">Global Permutation Entropy</h3>
-          <p class="pub-desc">A novel complexity measure on ordinal patters of a time series. We consider both consicutive and non-consecutive permutation patterns, then use shannon entropy over the frequencies.</p>
-          <p class="pub-desc">ArXiv Preprint, in review for Applied Mathematics and Computation.</p>
-          <a href="#" class="pub-btn" target="https://arxiv.org/pdf/2508.19955">PDF</a>
+          <h3 class="pub-title">Publication Title 2</h3>
+          <p class="pub-desc">Brief description of the second publication. This should explain the main contribution and findings of the research paper in a concise manner.</p>
+          <a href="#" class="pub-btn" target="_blank">PDF</a>
         </div>
       </div>
     </div>
@@ -95,6 +94,3 @@
   </main>
 </body>
 </html>
-
-
-
